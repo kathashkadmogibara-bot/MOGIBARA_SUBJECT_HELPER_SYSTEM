@@ -5,162 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MOGIBARA</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>MOGIBARA - Subject Helper System</title>
 </head>
 
 <body>
 
-    <!-- Website Header -->
-    <header class="header">
+    <header>
         <h1>MOGIBARA</h1>
-        <p>Subject Helper System</p>
+        <p>SUBJECT HELPER SYSTEM</p>
     </header>
 
+    <main>
 
-    <!-- Subject Menu -->
-    <section class="menu-section">
+        <h2>What Subject Helper System Do You Want?</h2>
 
-        <h2>Subject</h2>
+        <a href="mathematics.html">
+            <button>Mathematics</button>
+        </a>
 
-        <div class="menu">
-
-            <button class="menu-button active">
-                Mathematics
-            </button>
-
-            <button class="menu-button">
-                Advanced Mathematics
-            </button>
-
-        </div>
-
-    </section>
-
-
-    <!-- System Menu -->
-    <section class="menu-section">
-
-        <h2>System</h2>
-
-        <div class="menu">
-
-            <button class="menu-button active">
-                Base Changer
-            </button>
-
-        </div>
-
-    </section>
-
-
-    <!-- Selected System Interface -->
-    <main class="system-container">
-
-        <div class="system-header">
-            <h2>Base Changer</h2>
-            <p>Convert a number from one base to another</p>
-        </div>
-
-
-        <div class="converter">
-
-            <!-- Base -->
-            <div class="input-group">
-
-                <label for="fromBase">
-                    From Base
-                </label>
-
-                <input
-                    type="number"
-                    id="fromBase"
-                    min="2"
-                    max="36"
-                    placeholder="2 - 36"
-                >
-
-            </div>
-
-
-            <!-- Number -->
-            <div class="input-group">
-
-                <label for="number">
-                    Number
-                </label>
-
-                <input
-                    type="text"
-                    id="number"
-                    placeholder="Enter your number"
-                >
-
-            </div>
-
-
-            <!-- Convert To -->
-            <div class="input-group">
-
-                <label for="toBase">
-                    Convert To
-                </label>
-
-                <input
-                    type="number"
-                    id="toBase"
-                    min="2"
-                    max="36"
-                    placeholder="2 - 36"
-                >
-
-            </div>
-
-
-            <!-- Convert Button -->
-            <button id="convertButton" class="convert-button">
-                Convert
-            </button>
-
-
-            <!-- Error -->
-            <p id="errorMessage" class="error"></p>
-
-
-            <!-- Answer -->
-            <div class="answer-box">
-
-                <h3>Answer</h3>
-
-                <div id="answer">
-                    Your answer will appear here
-                </div>
-
-            </div>
-
-
-            <!-- Previous Answers -->
-            <div class="history-box">
-
-                <h3>Conversion History</h3>
-
-                <div id="history">
-                </div>
-
-            </div>
-
-        </div>
+        <button>Advanced Mathematics</button>
 
     </main>
-
-
-    <footer>
-        <p>© 2026 MOGIBARA</p>
-    </footer>
-
-
-    <script src="script.js"></script>
 
 </body>
 
