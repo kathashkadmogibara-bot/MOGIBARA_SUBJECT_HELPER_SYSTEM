@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Base Changer - MOGIBARA</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>MOGIBARA</h1>
+        <p>BASE CHANGER</p>
+    </header>
+
+    <main>
+
+        <h2>Base Changer</h2>
+
+        <div>
+
+            <label for="fromBase">From Base</label>
+            <input
+                type="number"
+                id="fromBase"
+                min="2"
+                max="36"
+            >
+
+        </div>
+
+        <div>
+
+            <label for="number">Number</label>
+            <input
+                type="text"
+                id="number"
+            >
+
+        </div>
+
+        <div>
+
+            <label for="toBase">Convert To</label>
+            <input
+                type="number"
+                id="toBase"
+                min="2"
+                max="36"
+            >
+
+        </div>
+
+        <button id="convertButton">
+            Convert
+        </button>
+
+        <section>
+
+            <h3>Answer</h3>
+
+            <div id="answer"></div>
+
+        </section>
+
+        <section>
+
+            <h3>Conversion History</h3>
+
+            <div id="history"></div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
