@@ -1,0 +1,111 @@
+/* =========================
+   BODY
+   ========================= */
+
+body {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
+main {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+button {
+    background-color: rgb(70, 70, 70);
+    color: white;
+    border: 1px solid rgb(120, 120, 120);
+    border-radius: 10px;
+    padding: 14px 25px;
+    margin: 8px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(90, 90, 90);
+}
+
+
+/* =========================
+   INPUTS
+   ========================= */
+
+input {
+    background-color: rgb(40, 40, 40);
+    color: white;
+    border: 1px solid rgb(120, 120, 120);
+    border-radius: 8px;
+    padding: 12px;
+    margin: 8px;
+    font-size: 16px;
+}
+
+
+/* =========================
+   ANSWER
+   ========================= */
+
+section {
+    margin-top: 25px;
+}
+
+#answer,
+#history {
+    background-color: rgb(40, 40, 40);
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    min-height: 25px;
+}
+
+
+/* =========================
+   LINKS
+   ========================= */
+
+a {
+    text-decoration: none;
+}
