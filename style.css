@@ -6,6 +6,7 @@ body {
     background-color: rgb(51, 51, 51);
     color: white;
     font-family: Arial, sans-serif;
+
     margin: 0;
     padding: 20px;
 }
@@ -17,8 +18,9 @@ body {
 
 header {
     text-align: center;
+
     padding: 25px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 }
 
 header h1 {
@@ -39,107 +41,104 @@ header p {
 main {
     max-width: 700px;
     margin: auto;
+
     text-align: center;
 }
 
 main h2 {
     font-size: 28px;
-    margin-bottom: 25px;
+
+    margin-bottom: 40px;
 }
 
 
 /* =========================
-   BUTTON CONTAINER
+   SUBJECT MENU
 ========================= */
 
-#topicList {
+.subject-menu {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
+
+    gap: 16px;
+
+    width: 100%;
 }
 
 
 /* =========================
-   ALL BUTTONS
+   SUBJECT LINKS
 ========================= */
 
-button {
+.subject-menu a {
     display: block;
+
+    width: 100%;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   SUBJECT BUTTONS
+========================= */
+
+.subject-menu button {
+    display: block;
+
     width: 100%;
 
     background-color: rgb(70, 70, 70);
+
     color: white;
 
     border: 1px solid rgb(120, 120, 120);
+
     border-radius: 10px;
 
-    padding: 14px 20px;
+    padding: 16px 20px;
+
     margin: 0;
 
-    font-size: 17px;
+    font-size: 18px;
+
     cursor: pointer;
 
     box-sizing: border-box;
 }
 
-button:hover {
+
+/* =========================
+   BUTTON HOVER
+========================= */
+
+.subject-menu button:hover {
     background-color: rgb(90, 90, 90);
 }
 
 
 /* =========================
-   TOPIC BUTTONS
+   GENERAL BUTTON
 ========================= */
 
-.topic-button {
-    width: 100%;
-}
+button {
+    background-color: rgb(70, 70, 70);
 
+    color: white;
 
-/* =========================
-   FORMULA BUTTONS
-========================= */
+    border: 1px solid rgb(120, 120, 120);
 
-.formula-button {
-    width: 100%;
-    text-align: left;
-}
-
-
-/* =========================
-   MAIN ANSWER / PROVE
-========================= */
-
-#topicList > button:not(.topic-button):not(.formula-button) {
-    margin-top: 5px;
-}
-
-
-/* =========================
-   FORMULA ANSWER
-========================= */
-
-.formula-answer {
-    background-color: rgb(40, 40, 40);
-
-    border: 1px solid rgb(100, 100, 100);
     border-radius: 10px;
 
-    padding: 20px;
-    margin-top: 15px;
+    padding: 14px 25px;
 
-    min-height: 50px;
+    font-size: 17px;
 
-    text-align: left;
+    cursor: pointer;
+}
 
-    white-space: pre-wrap;
-    overflow-x: auto;
-
-    line-height: 1.7;
-    font-size: 16px;
-
-    box-sizing: border-box;
+button:hover {
+    background-color: rgb(90, 90, 90);
 }
 
 
@@ -149,12 +148,15 @@ button:hover {
 
 input {
     background-color: rgb(40, 40, 40);
+
     color: white;
 
     border: 1px solid rgb(120, 120, 120);
+
     border-radius: 8px;
 
     padding: 12px;
+
     margin: 8px;
 
     font-size: 16px;
@@ -167,8 +169,81 @@ input {
 
 label {
     display: block;
+
     margin-top: 12px;
     margin-bottom: 5px;
+}
+
+
+/* =========================
+   FORMULA SYSTEM
+========================= */
+
+#topicList {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    width: 100%;
+}
+
+
+/* =========================
+   TOPIC BUTTONS
+========================= */
+
+.topic-button {
+    display: block;
+
+    width: 100%;
+
+    text-align: left;
+}
+
+
+/* =========================
+   FORMULA BUTTONS
+========================= */
+
+.formula-button {
+    display: block;
+
+    width: 100%;
+
+    text-align: left;
+}
+
+
+/* =========================
+   FORMULA ANSWER
+========================= */
+
+.formula-answer {
+    background-color: rgb(40, 40, 40);
+
+    border: 1px solid rgb(100, 100, 100);
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    margin-top: 15px;
+
+    min-height: 50px;
+
+    text-align: left;
+
+    white-space: pre-wrap;
+
+    overflow-x: auto;
+
+    line-height: 1.7;
+
+    font-size: 16px;
+
+    box-sizing: border-box;
 }
 
 
@@ -185,9 +260,11 @@ section {
     background-color: rgb(40, 40, 40);
 
     border: 1px solid rgb(100, 100, 100);
+
     border-radius: 10px;
 
     padding: 15px;
+
     margin-top: 10px;
 
     min-height: 25px;
@@ -200,6 +277,7 @@ section {
 
 a {
     text-decoration: none;
+
     color: inherit;
 }
 
@@ -210,6 +288,7 @@ a {
 
 #errorMessage {
     color: red;
+
     margin: 10px 0;
 }
 
@@ -224,6 +303,10 @@ a {
         padding: 12px;
     }
 
+    header {
+        margin-bottom: 35px;
+    }
+
     header h1 {
         font-size: 34px;
     }
@@ -234,11 +317,18 @@ a {
 
     main h2 {
         font-size: 23px;
+
+        margin-bottom: 32px;
     }
 
-    button {
-        font-size: 16px;
-        padding: 13px 16px;
+    .subject-menu {
+        gap: 16px;
+    }
+
+    .subject-menu button {
+        font-size: 17px;
+
+        padding: 15px 16px;
     }
 
     .formula-answer {
